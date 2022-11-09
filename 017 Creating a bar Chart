@@ -1,0 +1,12 @@
+#Working with X and Y axis
+import matplotlib.pyplot as plt
+
+numBS=[1,2.5,4,3,2.5,2]
+names=["Joe Bloggs","Mary Murphy","Claire Whelan","Mike Fahey","Gillian Marks", "Arya Quille"]
+
+#Change from .plot to .bar
+plt.bar(names,numBS)
+plt.title("Brothers & Sisters")
+plt.xlabel("Student")
+plt.ylabel("Num Bros & Sisters")
+plt.show()
