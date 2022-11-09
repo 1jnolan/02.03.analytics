@@ -1,0 +1,16 @@
+#Working with X and Y axis
+import matplotlib.pyplot as plt
+
+numBS=[1,2.5,4,3,2.5,2]
+names=["Joe Bloggs","Mary Murphy","Claire Whelan","Mike Fahey","Gillian Marks", "Arya Quille"]
+
+
+#Argument 1 = Y axis
+#Argument 2 = X axis
+#Argument 3 = changing the style/appearance
+
+plt.plot(names,numBS,"rs")
+plt.title("Brothers & Sisters")
+plt.xlabel("Student")
+plt.ylabel("Num Bros & Sisters")
+plt.show()
