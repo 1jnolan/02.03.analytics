@@ -1,0 +1,16 @@
+#PLOTTING GRAPHS
+
+#import the pyplot interface from the matplotlib module
+import matplotlib.pyplot as plt
+
+# each time we want to use matplotlib.pyplot we would need to type out the full name.
+# to avoid typing it out each time we rename it (like creating a variable)
+# in this example matplotlib.pyplot is renames AS plt
+
+myList=[1,19,27,8,5,9]
+plt.plot(myList)
+#takes in the list as an arguement - we can put in more than one.
+#The .plot() uses the values in myList as the y-axis values.
+#Because there is not a second list, pyplot uses the list index as the x axis numbers.
+
+plt.show()
