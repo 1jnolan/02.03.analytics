@@ -1,0 +1,17 @@
+#LABELLING GRAPHS
+
+#import the pyplot interface from the matplotlib module
+import matplotlib.pyplot as plt
+
+numBS=[1,2.5,4,3,2.5,2]
+plt.plot(numBS)
+plt.title("Brothers and Sisters")
+#Add a title to the graph
+
+
+plt.xlabel("List Index")
+#label the x axis of the graph
+
+plt.ylabel("Num Bros & Sisters")
+#label the y axis of the graph
+plt.show()
