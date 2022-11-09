@@ -1,0 +1,14 @@
+#Finding the frequency of specific data
+myList=["apples","apples","oranges","oranges","oranges","bananas","oranges","apples"]
+fruitnames=[]
+fruitcounts=[]
+
+for item in myList:
+    if item not in fruitnames:
+        fruitnames.append(item)
+        
+for item in fruitnames:
+    total=myList.count(item)
+    fruitcounts.append(total)
+print(fruitnames)
+print(fruitcounts)
