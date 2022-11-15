@@ -1,0 +1,68 @@
+counter=0
+hoursList=[]
+while counter<7:
+  hoursEntered=int(input("Please enter the amount consumed on day"))
+  hoursList.append(hoursEntered)
+  counter+=1
+  
+
+
+#per hour he consumes 05. litres of milk
+milkConsumedList=[]
+milkCalculation=()
+
+#FOR each item in the list HOURS
+for item in hoursList:
+    
+    #mutiply the item by 1.5 and store the result in a variable.
+    milkCalculation=((item)*0.5)
+    
+    #append the result to the list milkConsumed
+    milkConsumedList.append(milkCalculation)
+
+#Print out the new result
+print("Stephen consumes the following litres of milk: \n", milkConsumedList)
+
+print("")
+
+days=["Mon:","Tue:", "Wed:", "Thurs:","Fri:","Sat:","Sun:"]
+
+#Using a while Loop to print out each individual day and consumption of milk:
+counter=0
+while counter <len(hoursList):
+    print("On ", days[counter],"Stephen consumes", milkConsumedList[counter], "litres of milk")
+    counter+=1
+print("")
+#Calculating the cost per day:
+
+#Price per litre:
+price=1.35
+
+#cost per litre variable (empty)
+cost=()
+
+#list to store each result:
+costPerDayList=[]
+for item in milkConsumedList:
+    cost=((item)*price)
+    #The result of this will mean that numbers/floats have huge amounts of decimal places. Lets get rid of them using the round function and setting how many decimals we want in the 2nd arguement.
+    cost=round(cost,2)
+    costPerDayList.append(cost)
+print("The amount he owes per day in Euros is: \n", costPerDayList)
+
+print("")
+
+#Print out the total owed per day:
+counter=0
+while counter <len(costPerDayList):
+    print("On ", days[counter],"Stephen owes: €", costPerDayList[counter], "for milk")
+    counter+=1
+
+#Calculate the total owed:
+totalCost=(0)
+
+for item in costPerDayList:
+    totalCost=(item+totalCost)
+    totalCost=round(totalCost,2)
+print("")
+print("At the end of the week Stephen owes:", totalCost,"€")
