@@ -1,0 +1,25 @@
+#Increment Each number in a list by 1
+
+#Create the empty list
+numberList=[]
+
+#As the user how many numbers they want to enter. e.g. 3
+totalNumber= int(input("How many numbers do you want to enter: "))
+
+#METHOD USING AN IF STATEMENT:
+if totalNumber > 0:
+    #create a range from the total numbers:
+    for number in range(totalNumber):
+        #ask the user to unput the number they want, this will be asked the number of times the totalNumber is set to.
+      number= int(input("Enter your number: "))
+      #Append each number the user enters to the list.  
+      numberList.append(number)
+
+ 
+
+print("Your numbers are now: ")
+
+#Get a new range of data based on the totalNumber entered. e.g. 3
+for number in range(totalNumber):
+        #then for each number in the range e.g.3 find what is at position 0 and add 1 to it, and so on throughout the range of numbers.
+       print(int(numberList[number]+1))
